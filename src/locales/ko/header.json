@@ -10,10 +10,9 @@
   "order_execution_detail": "주문/거래 세부 정보",
   "close_execution_list": "마감 거래 목록",
   "metaverse_trader": "메타버스 거래자",
-  "support_exchange": "거래소 지원",
+  "user_guides": "거래소 지원",
   "login": "로그인",
   "register": "회원가입",
-
   "mo_deposit": "입금",
   "mo_withdraw": "출금",
   "mo_submit_request": "요청 제출",

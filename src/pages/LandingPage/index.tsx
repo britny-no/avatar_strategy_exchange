@@ -19,13 +19,6 @@ const Index = () => {
         <Layout>
             <Landing>
                 <Hero />
-                <Section01 />
-                <Section02 />
-                <Section03 />
-                <Section04 />
-                <Reviews />
-                <Guides />
-                <BottomComponent />
             </Landing>
         </Layout>
     );
@@ -65,7 +58,7 @@ const StartNow = styled.div<{ $isMobile: boolean }>`
         color: #000743;
     }
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             height: 209px;
             padding: 60px 0;

@@ -38,11 +38,11 @@ interface IProps {
 }
 
 const LANGUAGE_OB = {
-    "en-US" : "English",
-    "ko-KR" : "Korean",
-    "jp-JP" : "日本語",
+    "en-US": "English",
+    "ko-KR": "Korean",
+    "jp-JP": "日本語",
     "ch-CH-1": "简体\n中文",
-    "ch-CH-2" :"繁體\n中文",
+    "ch-CH-2": "繁體\n中文",
     "vt-VT": "Tiếng\nViệt"
 }
 
@@ -50,7 +50,7 @@ const Navigation = ({ theme }: IProps) => {
     const { t } = useTranslation()
     const dispatch = useDispatch();
     const szAccNo = useTypedSelector((state) => state.userReducer.data.szAccNo);
-    const loout =  useTypedSelector((state) => state.stateReducer.loout);
+    const loout = useTypedSelector((state) => state.stateReducer.loout);
 
     const [openMobileNav, setOpenMobileNav] = useState(false);
     const { isMobile } = useScreenSize();
@@ -77,10 +77,10 @@ const Navigation = ({ theme }: IProps) => {
 
     const toggleLocales = useCallback(
         (locale: string) => {
-          i18n.changeLanguage(locale);
+            i18n.changeLanguage(locale);
         },
         [i18n]
-      );
+    );
 
 
     useEffect(() => {
@@ -174,7 +174,7 @@ const Navigation = ({ theme }: IProps) => {
         setOpenLang((state) => !state);
     };
 
-    const handleClose = (event:  MouseEvent | TouchEvent, type: 'event' | 'support' | 'wallet' | 'trade' | 'lang') => {
+    const handleClose = (event: MouseEvent | TouchEvent, type: 'event' | 'support' | 'wallet' | 'trade' | 'lang') => {
         switch (type) {
             case 'event':
                 if (eventAnchorRef.current && eventAnchorRef.current.contains(event.target as HTMLElement)) {
@@ -205,12 +205,12 @@ const Navigation = ({ theme }: IProps) => {
                 break;
 
             case 'lang':
-                    if (langAnchorRef.current && langAnchorRef.current.contains(event.target as HTMLElement)) {
-                        return;
-                    }
-    
-                    setOpenLang(false);
-                    break;
+                if (langAnchorRef.current && langAnchorRef.current.contains(event.target as HTMLElement)) {
+                    return;
+                }
+
+                setOpenLang(false);
+                break;
             default:
                 break;
         }
@@ -288,18 +288,18 @@ const Navigation = ({ theme }: IProps) => {
         })
         socketService.sendToAgent({
             Header: { function: 'D', termtype: 'HTS', trcode: 'loout' },
-            Input1: { 
+            Input1: {
                 szMemberNo: "000",
                 szCustId: email,
-                cUserLevel : "4",
-                szIPAddress : "",
-                cFlag : "1"
+                cUserLevel: "4",
+                szIPAddress: "",
+                cFlag: "1"
             },
         })
         setLoading(true);
     };
 
-    
+
 
     return (
         <StyledNavigation $isMobile={isMobile}>
@@ -317,16 +317,6 @@ const Navigation = ({ theme }: IProps) => {
                             {t("header:futures_trade")}
                         </Menu>
                         <div>
-                            <MultiMenu
-                                ref={walletAnchorRef}
-                                aria-controls={openWallet ? 'menu-list-grow' : undefined}
-                                aria-haspopup="true"
-                                onClick={handleOpenWallet}
-                            >
-                                <MenuNotLink theme={theme}>
-                                {t("header:wallet")} ▾
-                                </MenuNotLink>
-                            </MultiMenu>
                             <Popper
                                 open={openWallet}
                                 anchorEl={walletAnchorRef.current}
@@ -399,7 +389,7 @@ const Navigation = ({ theme }: IProps) => {
                                 onClick={handleOpenTrade}
                             >
                                 <MenuNotLink theme={theme}>
-                                {t("header:trade_history")} ▾
+                                    {t("header:trade_history")} ▾
                                 </MenuNotLink>
                             </MultiMenu>
                             <Popper
@@ -429,7 +419,7 @@ const Navigation = ({ theme }: IProps) => {
                                                             state={trade_loaction.location_1.state}
                                                             style={{ fontWeight: 'bold' }}
                                                         >
-                                                           {t("header:execution_list")}
+                                                            {t("header:execution_list")}
                                                         </Menu>
                                                     </MenuItem>
                                                     <MenuItem onClick={tradeHandleClose}>
@@ -443,8 +433,8 @@ const Navigation = ({ theme }: IProps) => {
                                                     </MenuItem>
                                                     <MenuItem onClick={tradeHandleClose}>
                                                         <Menu
-                                                           to={trade_loaction.location_3.pathname}
-                                                           state={trade_loaction.location_3.state}
+                                                            to={trade_loaction.location_3.pathname}
+                                                            state={trade_loaction.location_3.state}
                                                             style={{ fontWeight: 'bold' }}
                                                         >
                                                             {t("header:close_execution_list")}
@@ -459,11 +449,8 @@ const Navigation = ({ theme }: IProps) => {
                         </div>
 
                         <div>
-                            <Menu to="/metaverse/avatar-trader" theme={theme}>
-                            {t("header:metaverse_trader")}
-                            </Menu>
                             <Menu to="/guide/deposit" theme={theme}>
-                            {t("header:support_exchange")}
+                                {t("header:user_guides")}
                             </Menu>
                         </div>
                     </NavigationWrap>
@@ -476,9 +463,9 @@ const Navigation = ({ theme }: IProps) => {
                                 aria-haspopup="true"
                                 onClick={handleOpenLang}
                             >
-                                <span style={{"color": theme === 'light' ?  "#000000" :  "#ffffff"}} >
-                                {LANGUAGE_OB[language]}
-                                </span>                            
+                                <span style={{ "color": theme === 'light' ? "#000000" : "#ffffff" }} >
+                                    {LANGUAGE_OB[language]}
+                                </span>
                             </MultiMenu>
                             <Popper
                                 open={openLang}
@@ -501,22 +488,22 @@ const Navigation = ({ theme }: IProps) => {
                                                     id="menu-list-grow"
                                                     onKeyDown={handleListKeyDown}
                                                 >
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "en-US")}}>
-                                                       <LangSpan>English</LangSpan>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "en-US") }}>
+                                                        <LangSpan>English</LangSpan>
                                                     </MenuItem>
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "ko-KR")}}>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "ko-KR") }}>
                                                         <LangSpan>Korean</LangSpan>
                                                     </MenuItem>
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "jp-JP")}}>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "jp-JP") }}>
                                                         <LangSpan>日本語</LangSpan>
                                                     </MenuItem>
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "ch-CH-1")}}>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "ch-CH-1") }}>
                                                         <LangSpan>简体中文</LangSpan>
                                                     </MenuItem>
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "ch-CH-2")}}>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "ch-CH-2") }}>
                                                         <LangSpan>繁體中文</LangSpan>
                                                     </MenuItem>
-                                                    <MenuItem onClick={(e) => {langHandleClose(e, "vt-VT")}}>
+                                                    <MenuItem onClick={(e) => { langHandleClose(e, "vt-VT") }}>
                                                         <LangSpan>Tiếng Việt</LangSpan>
                                                     </MenuItem>
                                                 </SubMenuWrap>
@@ -530,7 +517,7 @@ const Navigation = ({ theme }: IProps) => {
                             <div className="login-user">
                                 <CountDownTimer theme={theme} />
                                 <User fill={theme === 'light' ? '#404040' : '#FFFFFF'} />
-                                <p style={{ color: theme === 'light' ? '#404040' : '#FFFFFF', marginRight:"4px" }}>{email}</p>
+                                <p style={{ color: theme === 'light' ? '#404040' : '#FFFFFF', marginRight: "4px" }}>{email}</p>
                                 <LogoutButton theme={theme} onClick={handleSubmit} />
                             </div>
                         ) : (
@@ -542,7 +529,7 @@ const Navigation = ({ theme }: IProps) => {
                                 </LoginMenu>
                                 <SignMenu to="/mobile/signup" style={{ margin: 0 }} theme={theme}>
                                     <ContainedButton $isMobile={isMobile} variant="contained">
-                                    {t("header:register")}
+                                        {t("header:register")}
                                     </ContainedButton>
                                 </SignMenu>
                             </>
@@ -559,7 +546,7 @@ export default Navigation
 const StyledNavigation = styled.div<{ $isMobile: boolean }>`
     width: 100%;
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             display: flex;
             justify-content: flex-end;
@@ -607,7 +594,7 @@ export const RegisterWrap = styled.div<{ $isMobile: boolean }>`
         }
     }
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             display: flex;
             flex-direction: column;
@@ -619,7 +606,7 @@ export const RegisterWrap = styled.div<{ $isMobile: boolean }>`
         `}
 `;
 
-const Menu = styled(NavLink)<{ theme?: 'dark' | 'light' }>`
+const Menu = styled(NavLink) <{ theme?: 'dark' | 'light' }>`
     width: auto;
     margin-left: 10px !important;
     margin-right: 28px;
@@ -679,7 +666,7 @@ export const SubMenuWrap = styled(MenuList)`
     overflow: hidden;
     padding: 10px;
 `;
-export const ContainedButton = styled(Button)<{ $isMobile: boolean }>`
+export const ContainedButton = styled(Button) <{ $isMobile: boolean }>`
     width: 120px;
     height: 32px;
     background: #ffab2e !important;
@@ -694,7 +681,7 @@ export const ContainedButton = styled(Button)<{ $isMobile: boolean }>`
         color: #ffffff;
     }
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             width: 100%;
             height: 48px;
@@ -706,7 +693,7 @@ const LangSpan = styled.span`
     font-size: 1rem
 `;
 
-const LoginMenu = styled(NavLink)<{ theme?: 'dark' | 'light' }>`
+const LoginMenu = styled(NavLink) <{ theme?: 'dark' | 'light' }>`
     width: 50px;
     margin-left: 10px;
     margin-right: 10px;
@@ -722,7 +709,7 @@ const LoginMenu = styled(NavLink)<{ theme?: 'dark' | 'light' }>`
         `}
 `;
 
-const SignMenu = styled(NavLink)<{ theme?: 'dark' | 'light' }>`
+const SignMenu = styled(NavLink) <{ theme?: 'dark' | 'light' }>`
     width: auto;
     margin-right: 30px;
     font-size: 16px;

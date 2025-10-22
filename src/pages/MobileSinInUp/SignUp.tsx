@@ -120,7 +120,7 @@ const SignUp = () => {
     const [response, setResponse] = useState({
         error: "",
         success: false,
-        data : ''
+        data: ''
     });
     const [input, setInput] = useState({
         email: '',
@@ -128,7 +128,7 @@ const SignUp = () => {
         password: '',
         check_password: '',
         szFamilyName: '',
-        szUserName: '',
+        szUserName: 'Farming@gmail.com',
         szNation_Name: '',
         szTelNo2: '',
     });
@@ -152,7 +152,7 @@ const SignUp = () => {
     //     handleSignUp({ ...input });
     // };
     const handleSubmit = () => {
-        const { 
+        const {
             email,
             password,
             check_password,
@@ -161,6 +161,7 @@ const SignUp = () => {
             szNation_Name,
             szTelNo2
         } = input
+
         socketService.sendToAgent({
             Header: { function: 'D', termtype: 'HTS', trcode: 't113B' },
             Input1: {
@@ -210,7 +211,7 @@ const SignUp = () => {
         return <div>Wait please...</div>;
     }
 
-    const {data, error, success} = response
+    const { data, error, success } = response
 
     return (
         <Layout theme="light">
@@ -251,12 +252,12 @@ const SignUp = () => {
                         />
 
                         <div style={{ height: 4 }}></div>
-                        <CustomInput
+                        {/* <CustomInput
                             label={inviteCodeText(currentLanguage)}
                             onChange={handleChange('szUserName')}
                             type={TypeEnum.Text}
                             color="black"
-                        />
+                        /> */}
 
                         <div style={{ height: 4 }}></div>
                         <CustomInput
@@ -290,7 +291,7 @@ const SignUp = () => {
 };
 export default SignUp;
 
-const Wrapper = styled(Box)<{ $isMobile: boolean }>`
+const Wrapper = styled(Box) <{ $isMobile: boolean }>`
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -298,7 +299,7 @@ const Wrapper = styled(Box)<{ $isMobile: boolean }>`
     background-color: #ffffff;
     padding: 80px 0;
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             padding: 0 16px;
         `}
@@ -313,7 +314,7 @@ const Container = styled.div<{ $isMobile: boolean }>`
     box-sizing: border-box;
     border-radius: 4px;
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             padding: 30px 16px;
         `}
@@ -327,7 +328,7 @@ const Title = styled.div<{ $isMobile: boolean }>`
     color: #323232;
     margin-bottom: 40px;
     ${({ $isMobile }) =>
-    $isMobile &&
+        $isMobile &&
         css`
             font-size: 18px;
             line-height: 26px;
