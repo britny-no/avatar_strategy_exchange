@@ -1,0 +1,20 @@
+{
+  "ticket_no":"Ticket No",
+  "symbol":"Symbol",
+  "side":"Side",
+  "price":"Price",
+  "lot":"Lot",
+  "current_price":"Current Price",
+  "stop":"Stop",
+  "limit":"Limit",
+  "price_difference":"Price Difference",
+  "gross_p_n_l":"Gross P&L",
+  "leverage":"Leverage",
+  "cross_iso":"CROSS/ISO",
+  "market":"Market",
+  "order_time":"Order Time",
+  "order_no":"Order No",
+  "stop_no":"Stop No",
+ "limit_no":"Limit No",
+  "business_date":"Business Date"
+}

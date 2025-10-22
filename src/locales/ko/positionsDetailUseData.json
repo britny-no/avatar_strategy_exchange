@@ -1,0 +1,13 @@
+{
+  "symbol": "종목코드",
+  "lot":"동일 종목 수량",
+  "side":"매매구분",
+  "price":"진입환율나중에구현",
+  "current_price":"현재환율",
+  "price_difference":"일일손익",
+  "gross_p_n_l":"총손익",
+  "commission": "체결수수료",
+  "netpl": "순손익",
+  "point_position":"소수최저자리",
+  "close_position":"반대매매"
+}

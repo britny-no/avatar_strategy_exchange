@@ -1,0 +1,13 @@
+{
+  "order_no":"Order No",
+  "symbol":"Symbol",
+  "side": "Side",
+  "price":"Price",
+  "lot":"Lot",
+  "current_price":"Current Price",
+  "stop":"Stop",
+  "limit":"Limit",
+  "cross_iso":"CROSS/ISO",
+  "order_time":"Order Time",
+  "leverage":"Leverage"
+}

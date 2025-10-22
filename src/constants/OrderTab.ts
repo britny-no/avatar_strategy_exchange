@@ -1,0 +1,16 @@
+export const OPEN_POSITIONS = "open-positions";
+export const OPEN_ORDERS = "open-orders";
+export const STOP = "stop";
+export const LIMIT = "limit";
+export const STOP_PRICE = "fStopPrice";
+export const LIMIT_PRICE = "fLimitPrice";
+export const TARGET_PRICE = "fOrderPrice";
+export const TARGET_AMOUNT = "fOrderSu";
+export const UODE = "UODE";
+export const UCES = "UCES";
+export const UCEL = "UCEL";
+export const URE = "URE";
+export const UOM = "UOM";
+export const UOE = "UOE";
+export const UCM = "UCM";
+export const MARKET = "market";

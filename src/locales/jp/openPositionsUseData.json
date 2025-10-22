@@ -1,0 +1,20 @@
+{
+  "ticket_no": "チケット番号",
+  "symbol": "シンボル",
+  "side": "売買",
+  "price": "価格",
+  "lot": "ロット",
+  "current_price": "現在価格",
+  "stop": "ストップ",
+  "limit": "リミット",
+  "price_difference": "価格差",
+  "gross_p_n_l": "総利益損失",
+  "leverage": "レバレッジ",
+  "cross_iso": "クロス/アイソ",
+  "market": "市場",
+  "order_time": "注文時間",
+  "order_no": "注文番号",
+  "stop_no": "ストップ番号",
+  "limit_no": "リミット番号",
+  "business_date": "営業日"
+}

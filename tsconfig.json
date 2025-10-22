@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "target": "ESNext",               // Use 'ESNext' or 'ES2020' as your target
+    "module": "ESNext",               // Set to 'ESNext' to allow import.meta
+    "moduleResolution": "Node",       // Use Node module resolution
+    "jsx": "react-jsx",               // Enable JSX support
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,  // This can help with module imports
+    "outDir": "./build",
+    "types": ["@types/jquery"] // Add this if it isn't already present
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,14 @@
+{
+  "order_no": "訂單號碼",
+  "execution_no": "執行號碼",
+  "symbol": "符號",
+  "order_lot": "訂單量",
+  "execution_lot": "執行量",
+  "order_kinds": "訂單種類",
+  "order_price": "訂單價格",
+  "execution_price": "執行價格",
+  "order_type": "訂單類型",
+  "order_time": "訂單時間",
+  "execution_time": "執行時間",
+  "point_position": "點位置"
+}

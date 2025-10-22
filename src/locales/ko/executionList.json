@@ -1,0 +1,5 @@
+{
+  "execution_list": "실행 목록", "unrealized_profit_less": "미실현 손익", "account": "계정", "date": "날짜", "inquery": "조회","order_no": "주문 번호", "execution_no": "실행 번호", "symbol": "심볼", "order_lot": "주문 로트", "execution_lot": "실행 로트", "order_kinds": "주문 유형", "order_price": "주문 가격", "execution_price": "실행 가격", "order_typ": "주문 유형", "order_time": "주문 시간", "execution_time": "실행 시간", "point_position": "포인트 위치", "side": "매매 방향", "lot": "로트", "stop_price": "스톱 가격", "limit_price": "한도 가격", "stat": "상태", "manager_id": "매니저 ID", "ip_address": "IP 주소", "account_no": "계정 번호", "close_lot": "마감 로트", "open_time": "오픈 시간", "close_time": "마감 시간", "open_price": "오픈 가격", "close_price": "마감 가격", "p_l_price": "손익 가격", "p_l": "손익", "open_commission": "오픈 수수료", "close_commission": "마감 수수료", "order_type": "주문 유형",
+  "order_execution_detail": "주문/거래 상세", 
+   "close_execution_list": "마감 실행 목록", "next": "다음", "close_p_l": "마감 P&L" , "close_count": "마감 갯수"
+}

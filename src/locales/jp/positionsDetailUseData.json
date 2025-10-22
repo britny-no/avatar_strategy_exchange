@@ -1,0 +1,13 @@
+{
+  "symbol": "シンボル",
+  "lot": "ロット",
+  "side": "売買",
+  "price": "価格",
+  "current_price": "現在価格",
+  "price_difference": "価格差",
+  "gross_p_n_l": "総利益損失",
+  "commission": "手数料",
+  "netpl": "純利益/損失",
+  "point_position": "ポイント位置",
+  "close_position": "ポジションを閉じる"
+}

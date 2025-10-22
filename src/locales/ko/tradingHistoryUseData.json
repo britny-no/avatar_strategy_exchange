@@ -1,0 +1,15 @@
+{
+  "order_no":"회원처리항목",
+  "execution_no": "체결번호",
+  "symbol":"종목코드",
+  "order_lot": "주문수량",
+  "execution_lot": "체결수량",
+  "order_kinds": "매매구분",
+  "order_price": "주문환율",
+  "execution_price":"체결환율",
+  "order_type":"주문형태",
+  "order_time":"주문시각",
+  "execution_time":"체결시각",
+  "point_position":"소수최저자리"
+}
+

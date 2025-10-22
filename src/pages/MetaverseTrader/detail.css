@@ -1,0 +1,133 @@
+.container {
+    width: 100%;
+	display: inline-grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-columns:  1fr 1fr 1fr;
+    border: 1px solid black;
+    margin: 4px;
+}
+
+
+.container .item:nth-child(1) {
+	grid-row: 1 / span 3;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .item:nth-child(n+2){
+    border-bottom: 1px solid black;
+}
+.container .item:nth-last-child(1){
+    border-bottom: 0px
+}
+.container .item:nth-last-child(2){
+    border-bottom: 0px
+}
+
+.container .item:nth-child(2n+1){
+    text-align: right;
+}
+
+
+/*  */
+.container_2 {
+    width: 100%;
+	display: inline-grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-columns:  1fr 1fr 1fr;
+    border: 1px solid black;
+    margin: 4px;
+    
+}
+
+.container_2 .item:nth-child(1) {
+	grid-row: 1 / span 13;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_2 .item:nth-child(n+2){
+    border-bottom: 1px solid black;
+    /* border-right: 1px solid black; */
+}
+.container_2 .item:nth-last-child(1){
+    border-bottom: 0px
+}
+.container_2 .item:nth-last-child(2){
+    border-bottom: 0px
+}
+
+/*  */
+.container_3 {
+    width: 100%;
+	display: inline-grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-columns:  1fr 1fr 1fr;
+    border: 1px solid black;
+    margin: 4px;
+    
+}
+
+.container_3 .item:nth-child(1) {
+	grid-row: 1 / span 6;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_3 .item:nth-child(n+2){
+    border-bottom: 1px solid black;
+    /* border-right: 1px solid black; */
+}
+.container_3 .item:nth-last-child(1){
+    border-bottom: 0px
+}
+
+.container_3 .item:nth-last-child(2){
+    border-bottom: 0px
+}
+
+.container_4 {
+    width: 100%;
+	display: inline-grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-columns:  1fr 1fr 1fr;
+    border: 1px solid black;
+    margin: 4px;
+    
+}
+
+.container_4 .item:nth-child(1) {
+	grid-row: 1 / span 4;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_4 .item:nth-child(n+2){
+    border-bottom: 1px solid black;
+    /* border-right: 1px solid black; */
+}
+
+.container_4 .item:nth-last-child(1){
+    border-bottom: 0px
+}
+
+.container_4 .item:nth-last-child(2){
+    border-bottom: 0px
+}
+
+.item input {
+    width: 150px;
+    border: none;
+    border-left: 1px solid black;
+}
+.item select {
+    width: 150px;
+}

@@ -1,0 +1,20 @@
+{
+  "ticket_no": "Số vé",
+  "symbol": "Biểu tượng",
+  "side": "Hướng",
+  "price": "Giá",
+  "lot": "Số lô",
+  "current_price": "Giá hiện tại",
+  "stop": "Dừng",
+  "limit": "Giới hạn",
+  "price_difference": "Chênh lệch giá",
+  "gross_p_n_l": "Lợi nhuận/giao dịch ròng",
+  "leverage": "Đòn bẩy",
+  "cross_iso": "CROSS/ISO",
+  "market": "Thị trường",
+  "order_time": "Thời gian Đặt hàng",
+  "order_no": "Số Đơn hàng",
+  "stop_no": "Số Dừng",
+  "limit_no": "Số Giới hạn",
+  "business_date": "Ngày Kinh doanh"
+}

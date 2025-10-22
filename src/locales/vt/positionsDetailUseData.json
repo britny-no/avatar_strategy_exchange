@@ -1,0 +1,13 @@
+{
+  "symbol": "Biểu tượng",
+  "lot": "Số lô",
+  "side": "Hướng",
+  "price": "Giá",
+  "current_price": "Giá hiện tại",
+  "price_difference": "Chênh lệch giá",
+  "gross_p_n_l": "Lợi nhuận/giao dịch ròng",
+  "commission": "Phí môi giới",
+  "netpl": "Lợi nhuận/Giảm thiểu ròng",
+  "point_position": "Vị trí điểm",
+  "close_position": "Đóng vị trí"
+}

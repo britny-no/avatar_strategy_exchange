@@ -1,0 +1,20 @@
+{
+  "ticket_no": "訂單號",
+  "symbol": "符號",
+  "side": "方向",
+  "price": "價格",
+  "lot": "手數",
+  "current_price": "當前價格",
+  "stop": "停損",
+  "limit": "限價",
+  "price_difference": "價格差",
+  "gross_p_n_l": "毛利損",
+  "leverage": "槓桿",
+  "cross_iso": "交叉/隔離",
+  "market": "市場",
+  "order_time": "訂單時間",
+  "order_no": "訂單號",
+  "stop_no": "停損號",
+  "limit_no": "限價號",
+  "business_date": "營業日期"
+}

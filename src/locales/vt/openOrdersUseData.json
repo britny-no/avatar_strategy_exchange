@@ -1,0 +1,13 @@
+{
+  "order_no": "Số Đơn hàng",
+  "symbol": "Biểu tượng",
+  "side": "Hướng",
+  "price": "Giá",
+  "lot": "Số lô",
+  "current_price": "Giá hiện tại",
+  "stop": "Dừng",
+  "limit": "Giới hạn",
+  "cross_iso": "CROSS/ISO",
+  "order_time": "Thời gian Đặt hàng",
+  "leverage": "Đòn bẩy"
+}

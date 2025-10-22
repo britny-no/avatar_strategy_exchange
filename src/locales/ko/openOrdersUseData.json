@@ -1,0 +1,13 @@
+{
+  "order_no":"회원처리항목",
+  "symbol":"종목코드",
+  "side": "매매구분",
+  "price":"주문가격",
+  "lot":"주문수량",
+  "current_price":"현재가",
+  "stop":"Stop",
+  "limit":"Limit",
+  "cross_iso":"주문상태",
+  "order_time":"주문시각",
+  "leverage":"주문유형"
+}

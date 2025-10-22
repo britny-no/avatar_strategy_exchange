@@ -1,0 +1,20 @@
+{
+  "ticket_no": "订单号",
+  "symbol": "标记",
+  "side": "方向",
+  "price": "价格",
+  "lot": "手数",
+  "current_price": "当前价格",
+  "stop": "止损",
+  "limit": "限价",
+  "price_difference": "价格差",
+  "gross_p_n_l": "总利润损失",
+  "leverage": "杠杆",
+  "cross_iso": "跨/独",
+  "market": "市场",
+  "order_time": "订单时间",
+  "order_no": "订单号",
+  "stop_no": "止损号",
+  "limit_no": "限价号",
+  "business_date": "营业日期"
+}

@@ -1,0 +1,13 @@
+{
+  "symbol": "标记",
+  "lot": "手数",
+  "side": "方向",
+  "price": "价格",
+  "current_price": "当前价格",
+  "price_difference": "价格差",
+  "gross_p_n_l": "总利润损失",
+  "commission": "佣金",
+  "netpl": "净利润/损失",
+  "point_position": "点位",
+  "close_position": "平仓"
+}

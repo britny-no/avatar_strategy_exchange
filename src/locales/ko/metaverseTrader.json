@@ -1,0 +1,9 @@
+{
+  "please_login": "로그인 해주세요...", "wait_please": "잠시 기다려주세요...", "no_data": "데이터 없음...", "avatar_traders": "아바타 트레이더", "p_mg_martingale": "P_MG: 마티네일", "p_mg_detail": "마티네일 기본 전략 단계 및 섹션", "p_tp_typhoon": "P_TP 태풍", "p_tp_detail": "급격한 변동에 대한 전략", "p_tr_trap_repeat": "P_TR: 트랩 반복", "p_tr_detail": "정확한 간격 이후의 추세 전략", "p_tb_tech_band": "P_TB: 기술 밴드", "p_tb_detail": "기술 지표 참조 전략",
+
+"registration_completed": "등록 완료", "enter_the_strategy" : "전략 이름을 입력하세요", "strategy": "전략", "symbol": "심볼", "detail_information": "상세 정보", "strategy_name": "전략 이름", "set": "설정", "save": "저장",
+
+"my_avatars": "내 아바타", "martingale": "마티네일", "typhoon": "태풍", "trap_repeat": "트랩 반복", "tech_band": "기술 밴드", "cant_closeall": "모두 닫을 수 없습니다", "p_l": "P&L", "run": "실행", "pause": "일시 정지", "stop": "정지", "both": "양쪽", "sell": "판매", "buy": "구매", "close_all": "모두 닫기", "avatars_detail": "아바타 상세 정보", "stat": "상태", "sell_buy": "판매/구매", "positions": "포지션", "config": "설정", "change": "변경",
+
+"leader_avatars": "리더 아바타",   "metaverse_trader": "메타버스 거래자"
+}

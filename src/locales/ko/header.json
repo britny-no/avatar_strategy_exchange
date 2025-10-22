@@ -1,0 +1,25 @@
+{
+  "futures_trade": "선물 거래",
+  "wallet": "지갑",
+  "my_asset": "내 자산",
+  "history": "거래 내역",
+  "convert": "환전",
+  "deposit": "입금",
+  "trade_history": "거래 내역",
+  "execution_list": "거래 목록",
+  "order_execution_detail": "주문/거래 세부 정보",
+  "close_execution_list": "마감 거래 목록",
+  "metaverse_trader": "메타버스 거래자",
+  "support_exchange": "거래소 지원",
+  "login": "로그인",
+  "register": "회원가입",
+
+  "mo_deposit": "입금",
+  "mo_withdraw": "출금",
+  "mo_submit_request": "요청 제출",
+  "mo_user_guide": "사용자 안내",
+  "mo_avatar_traders": "아바타 트레이더",
+  "mo_my_avatars": "내 아바타",
+  "mo_avatars_detail": "아바타 세부 정보",
+  "mo_leaders_avatars": "리더스 아바타"
+}

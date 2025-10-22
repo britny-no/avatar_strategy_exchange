@@ -1,0 +1,13 @@
+{
+  "symbol": "符號",
+  "lot": "手數",
+  "side": "方向",
+  "price": "價格",
+  "current_price": "當前價格",
+  "price_difference": "價格差",
+  "gross_p_n_l": "毛利損",
+  "commission": "佣金",
+  "netpl": "淨利潤/損失",
+  "point_position": "點位",
+  "close_position": "平倉"
+}

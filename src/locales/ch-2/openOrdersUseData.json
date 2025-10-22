@@ -1,0 +1,13 @@
+{
+  "order_no": "訂單號",
+  "symbol": "符號",
+  "side": "方向",
+  "price": "價格",
+  "lot": "手數",
+  "current_price": "當前價格",
+  "stop": "停止",
+  "limit": "限價",
+  "cross_iso": "交叉/隔離",
+  "order_time": "訂單時間",
+  "leverage": "槓桿"
+}

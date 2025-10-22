@@ -1,0 +1,25 @@
+{
+  "futures_trade": "Futures Trade",
+  "wallet": "Wallet",
+  "my_asset" : "My Asset",
+  "history": "History",
+  "convert":"Convert",
+  "deposit": "Deposit",
+  "trade_history": "Trade History",
+  "execution_list": "Execution List",
+  "order_execution_detail": "Order/Execution Detail",
+  "close_execution_list": "Close Execution List",
+  "metaverse_trader": "Metaverse Trader",
+  "support_exchange": "Support Exchange",
+  "login": "Login",
+  "register": "Register",
+
+  "mo_deposit": "Deposit",
+  "mo_withdraw": "Withdraw",
+  "mo_submit_request": "Submit Request",
+  "mo_user_guide": "User Guide",
+  "mo_avatar_traders": "Avatar Traders",
+  "mo_my_avatars": "My Avatars",
+  "mo_avatars_detail": "Avatar Details",
+  "mo_leaders_avatars": "Leaders Avatars"
+}

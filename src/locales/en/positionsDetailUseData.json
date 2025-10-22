@@ -1,0 +1,13 @@
+{
+  "symbol": "Symbol",
+  "lot":"Lot",
+  "side":"Side",
+  "price":"Price",
+  "current_price":"Current Price",
+  "price_difference":"Price Difference",
+  "gross_p_n_l":"Gross P&L",
+  "commission": "Commission",
+  "netpl": "NetPL",
+  "point_position":"Point position",
+  "close_position":"Close position"
+}

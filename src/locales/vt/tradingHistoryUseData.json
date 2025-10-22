@@ -1,0 +1,14 @@
+{
+  "order_no": "Số đơn hàng",
+  "execution_no": "Số thực thi",
+  "symbol": "Ký hiệu",
+  "order_lot": "Số lô đặt hàng",
+  "execution_lot": "Số lô thực hiện",
+  "order_kinds": "Loại đơn hàng",
+  "order_price": "Giá đặt hàng",
+  "execution_price": "Giá thực hiện",
+  "order_type": "Loại đơn hàng",
+  "order_time": "Thời gian đặt hàng",
+  "execution_time": "Thời gian thực hiện",
+  "point_position": "Vị trí điểm"
+}

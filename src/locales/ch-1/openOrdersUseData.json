@@ -1,0 +1,13 @@
+{
+  "order_no": "订单号",
+  "symbol": "标记",
+  "side": "方向",
+  "price": "价格",
+  "lot": "手数",
+  "current_price": "当前价格",
+  "stop": "止损",
+  "limit": "限价",
+  "cross_iso": "跨/独",
+  "order_time": "订单时间",
+  "leverage": "杠杆"
+}

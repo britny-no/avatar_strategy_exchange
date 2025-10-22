@@ -1,0 +1,20 @@
+{
+  "ticket_no":"포지션ID",
+  "symbol":"종목명",
+  "side":"매매구분",
+  "price":"주문가",
+  "lot":"수량",
+  "current_price":"현재가",
+  "stop":"Stop",
+  "limit":"Limit",
+  "price_difference":"총손익",
+  "gross_p_n_l":"평가손익",
+  "leverage":"이자",
+  "cross_iso":"상태",
+  "market":"마켓",
+  "order_time":"주문시각",
+  "order_no":"주문 번호",
+  "stop_no":"Stop 번호",
+  "limit_no":"Limit 번호",
+  "business_date":"영업 일자"
+}
