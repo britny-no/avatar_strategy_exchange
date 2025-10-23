@@ -26,7 +26,7 @@ const BaseTable: React.FC<IBaseTableProps> = ({
     maxHeight = 580,
     rowHeight = 60,
     disableClick = false,
-    handleClick = () => () => {},
+    handleClick = () => () => { },
 }) => {
     const dispatch = useDispatch();
     const { email, jwt, szAccNo } = useUsersData();
@@ -109,7 +109,7 @@ const BaseTable: React.FC<IBaseTableProps> = ({
         return data.map((dataRow, index) => (
             <ContentRow
                 key={index}
-                onClick={!disableClick ? handleClick(dataRow) : () => {}}
+                onClick={!disableClick ? handleClick(dataRow) : () => { }}
             >
                 {dataColumn.map((colKey, colIndex) => (
                     colIndex !== 10 ? (
@@ -117,8 +117,8 @@ const BaseTable: React.FC<IBaseTableProps> = ({
                             {dataRow[colIndex]}
                         </TableData>
                     ) : (
-                        <TableDataButton key={colIndex} num={colIndex} val={dataRow[colIndex]}  onClick={() => reqCounterTrade(dataRow)}>
-                         Close All
+                        <TableDataButton key={colIndex} num={colIndex} val={dataRow[colIndex]} onClick={() => reqCounterTrade(dataRow)}>
+                            Close All
                         </TableDataButton>
                     )
                 ))}

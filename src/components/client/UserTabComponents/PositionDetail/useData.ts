@@ -81,7 +81,7 @@ const useData = (): ReturnType => {
             t("positionsDetailUseData:commission"),
             t("positionsDetailUseData:netpl"),
             t("positionsDetailUseData:point_position"),
-            t("positionsDetailUseData:close_position"),
+            // t("positionsDetailUseData:close_position"),
         ],
         isSuccess: trResult && trResult.Output1 ? true : false,
     };

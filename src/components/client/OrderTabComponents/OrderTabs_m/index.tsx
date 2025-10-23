@@ -20,12 +20,14 @@ const Index = ({ language = LANGUAGE.ENGLISH }) => {
             <TabMenu
                 reloadComponent={true}
                 menu={
-                    [t("trade:positions_detail"), t("trade:open_orders"), t("trade:open_positions")]
+                    [t("trade:positions_detail"),
+                    // t("trade:open_orders"),
+                    t("trade:open_positions")]
                 }
                 tabWidth={'50%'}
                 components={[
                     <Wrapper key={3}>
-                     <PositionDetail key={3} />
+                        <PositionDetail key={3} />
                     </Wrapper>,
                     <Wrapper key={0}>
                         <OpenOrders />

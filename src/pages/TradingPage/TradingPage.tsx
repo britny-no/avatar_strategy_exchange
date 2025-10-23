@@ -3,22 +3,22 @@ import { Box, Button } from '@mui/material';
 import styled from 'styled-components';
 import { useTranslation } from "react-i18next";
 
-import TabMenu from '@/components/common/TabMenu'; 
-import OpenOrders from '@/components/client/UserTabComponents/OpenOrders'; 
-import TradingHistory from '@/components/client/UserTabComponents/TradingHistory'; 
-import OpenPositions from '@/components/client/UserTabComponents/OpenPositions'; 
-import PositionDetail from '@/components/client/UserTabComponents/PositionDetail'; 
-import OrderTabMenu from '@/components/client/OrderTabComponents/OrderTabs'; 
-import CoinInfo from '@/components/client/CoinInfo'; 
-import Chart from '@/components/client/Chart/Chart'; 
-import Trades from '@/components/client/Trades'; 
-import UserMargin from '@/components/client/UserMargin'; 
-import OrderBook from '@/components/client/OrderBook'; 
-import SymbolDetail from '@/components/client/SymbolDetail'; 
-import useCurrentLanguage from '@/hooks/useCurrentLanguage'; 
-import Layout from '@/components/layout'; 
-import socketService from "@/states/socketAgent/SocketService"; 
-import useSymbolList from "@/hooks/useSymbolList"; 
+import TabMenu from '@/components/common/TabMenu';
+import OpenOrders from '@/components/client/UserTabComponents/OpenOrders';
+import TradingHistory from '@/components/client/UserTabComponents/TradingHistory';
+import OpenPositions from '@/components/client/UserTabComponents/OpenPositions';
+import PositionDetail from '@/components/client/UserTabComponents/PositionDetail';
+import OrderTabMenu from '@/components/client/OrderTabComponents/OrderTabs';
+import CoinInfo from '@/components/client/CoinInfo';
+import Chart from '@/components/client/Chart/Chart';
+import Trades from '@/components/client/Trades';
+import UserMargin from '@/components/client/UserMargin';
+import OrderBook from '@/components/client/OrderBook';
+import SymbolDetail from '@/components/client/SymbolDetail';
+import useCurrentLanguage from '@/hooks/useCurrentLanguage';
+import Layout from '@/components/layout';
+import socketService from "@/states/socketAgent/SocketService";
+import useSymbolList from "@/hooks/useSymbolList";
 
 const TradingPage = () => {
     const { t } = useTranslation();
@@ -91,7 +91,7 @@ const TradingPage = () => {
                                     reloadComponent={true}
                                     menu={[
                                         t("trade:positions_detail"),
-                                        t("trade:open_orders"),
+                                        // t("trade:open_orders"),
                                         t("trade:trading_history"),
                                         t("trade:open_positions"),
                                     ]}
