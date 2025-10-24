@@ -7,7 +7,7 @@ import {
   RadioGroup,
   FormControlLabel
 } from "@mui/material"
-import {NumericFormat} from "react-number-format";
+import { NumericFormat } from "react-number-format";
 
 import useAgentToSend from "@/hooks/useAgentToSend";
 

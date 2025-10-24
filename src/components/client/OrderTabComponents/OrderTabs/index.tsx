@@ -4,13 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { deleteTr } from '@/states/reducers/stateReducer';
-import NewOrderForm from '../NewOrder';
-import OrderTabMenu from './OrderTabMenu';
-import ModifyCancelForm from '../ModifyCancel';
-import StopLimitForm from '../StopLimit/StopLimitForm';
 import * as LANGUAGE from '@/constants/Language';
 import { useTypedSelector } from '@/states/useTypedSelector';
-import MyAvatars from "@/pages/MetaverseTrader/MyAvatars"
 import socketService from '@/states/socketAgent/SocketService';
 
 export default function Index({ language = LANGUAGE.KOREAN }) {

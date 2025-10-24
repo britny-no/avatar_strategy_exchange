@@ -20,6 +20,7 @@ const orderTabMenu = {
     height: '450px',
     divPadding: '14px 0',
     containerPadding: '14px 20px 10px 20px',
+    padding: "0"
 };
 
 const colors = {

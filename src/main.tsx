@@ -5,8 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import theme from './styled/theme';
 import './index.css'
 import App from '@/App'
-import { store, persistor } from '@/states/store';
-import  "./locales"; 
+import { store } from '@/states/store';
+import "./locales";
 
 createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
