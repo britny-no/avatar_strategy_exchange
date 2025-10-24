@@ -7,16 +7,18 @@ import { deleteTr } from '@/states/reducers/stateReducer';
 import * as LANGUAGE from '@/constants/Language';
 import { useTypedSelector } from '@/states/useTypedSelector';
 import socketService from '@/states/socketAgent/SocketService';
+import LogInRequired from "@/components/common/LogInRequired";
 
 export default function Index({ language = LANGUAGE.KOREAN }) {
     const { t } = useTranslation()
     const dispatch = useDispatch();
 
     const { email } = useTypedSelector((state) => state.userReducer.data);
+    const isLoggedIn = useTypedSelector((state) => state.userReducer.isLoggedIn);
+    const t3901 = useTypedSelector((state) => state.stateReducer.t3901);
     const [loading, setLoading] = useState(false);
     const [pre_form, setPreForm] = useState({})
     const [form, setForm] = useState({})
-    const t3901 = useTypedSelector((state) => state.stateReducer.t3901);
 
     const ob = {
         "P_MG": t("metaverseTrader:martingale"),
@@ -106,17 +108,20 @@ export default function Index({ language = LANGUAGE.KOREAN }) {
                             <RowMiddle style={{ width: '20%' }}>{v[1]}</RowMiddle>
                             <RowMiddle style={{ width: '20%' }}>{v[2]}</RowMiddle>
                             <RowMiddle style={{ width: '20%' }}>
-                                <select value={form[k].nCommand} onChange={onChangeHandler} name={k} style={{ cursor: "pointer" }}>
-                                    <option value="0">{t("metaverseTrader:pause")}</option>
-                                    <option value="1">{t("metaverseTrader:close_all")}</option>
-                                    <option value="2">{t("metaverseTrader:stop")}</option>
-                                    <option value="3">{t("metaverseTrader:both")}</option>
-                                    <option value="4">{t("metaverseTrader:sell")}</option>
-                                    <option value="5">{t("metaverseTrader:buy")}</option>
+                                <select value={form[k].nCommand} onChange={onChangeHandler} name={k} style={{
+                                    cursor: "pointer",
+                                    backgroundColor: "rgb(220, 182, 126)",
+                                    color: "white",
+                                }}>
+                                    <option value="0" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:pause")}</option>
+                                    <option value="1" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:close_all")}</option>
+                                    <option value="2" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:stop")}</option>
+                                    <option value="3" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:both")}</option>
+                                    <option value="4" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:sell")}</option>
+                                    <option value="5" style={{ backgroundColor: "rgb(220, 182, 126)", color: "white" }}>{t("metaverseTrader:buy")}</option>
                                 </select>
                             </RowMiddle>
                             <RowMiddle style={{ width: '20%' }}>{v[8]}</RowMiddle>
-                            {/* <RowMiddle style={{ width: '10%' }}><button name={k} onClick={reqSave}>Run</button></RowMiddle> */}
                         </AcriveTr>
                     })}
                 </tbody>
@@ -125,10 +130,16 @@ export default function Index({ language = LANGUAGE.KOREAN }) {
             return <span>{t("metaverseTrader:no_data")}</span>
         }
     }
+
+    const logInStyleProps = {
+        width: '100%',
+        height: '385px',
+    };
+
     return (
         <TapWrapper>
             <TabContent >
-                {renderPcTable()}
+                {isLoggedIn ? renderPcTable() : <LogInRequired {...logInStyleProps} />}
             </TabContent>
         </TapWrapper>
     );
@@ -154,18 +165,18 @@ const AssetTable = styled.table`
     & .column {
         height: 30px;
         line-height: 19px;
-        border-bottom: 1px solid #9a9a9a;
+        border-bottom: 1px solid rgb(255, 171, 46)
         font-family: Noto Sans;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        color: white;
+        color: rgb(255, 171, 46);
     }
 
     & .row {
         display: flex;
         width: 100%;
-        border-bottom: 1px solid #e7e7e7;
+        border-bottom: 1px solid  rgb(255, 171, 46)
         font-family: Noto Sans;
         font-style: normal;
 
@@ -191,5 +202,5 @@ const RowMiddle = styled.td`
     overflow: hidden;
     font-weight: normal;
     font-size: 14px;
-    color: white;
+    color: rgb(255, 171, 46);
 `;
