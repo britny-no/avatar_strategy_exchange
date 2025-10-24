@@ -8,6 +8,7 @@ import OrderBook from '@/components/client/OrderBook';
 import SymbolList from '@/components/client/SymbolList';
 import OrderTabsMobile from '@/components/client/OrderTabComponents/OrderTabs_m';
 import Swipe from './Swipe';
+import MyAvatar from "@/components/client/MyAvatar"
 
 
 import FavoriteList from '@/components/client/SymbolList/FavoriteList';
@@ -61,7 +62,7 @@ export default function TradingPageForMobile() {
                     menu={[t("trade:chart"), t("trade:order"), t("trade:stop_limit"), t("trade:modify_cancel")]}
                     components={[
                         <ChartWrapper key={1} />,
-                        <NewOrderForm key={2} />,
+                        <MyAvatar key={2} />,
                         <StopLimitForm key={3} language={currentLanguage} />,
                         <ModifyCancelForm key={4} language={currentLanguage} />,
                     ]}
