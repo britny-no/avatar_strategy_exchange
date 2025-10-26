@@ -19,11 +19,32 @@ import useCurrentLanguage from '@/hooks/useCurrentLanguage';
 import Layout from '@/components/layout';
 import socketService from "@/states/socketAgent/SocketService";
 import useSymbolList from "@/hooks/useSymbolList";
+import { useDispatch } from 'react-redux';
+import { useTypedSelector } from '@/states/useTypedSelector';
+import useUpdateData from '@/components/client/UserTabComponents/OpenOrders/useUpdateData';
 
 const TradingPage = () => {
     const { t } = useTranslation();
     const { currentSymbol } = useSymbolList();
     const { currentLanguage } = useCurrentLanguage();
+    const userReducerData = useTypedSelector((state) => state.userReducer.data);
+    const { szAccNo } = userReducerData;
+
+    const { data, originalData, isSuccess, dataColumn } = useUpdateData();
+
+    useEffect(() => {
+        const input = {
+            Header: {
+                function: 'D',
+                termtype: 'HTS',
+                trcode: 't3600',
+            },
+            Input1: {
+                szAccNo: szAccNo,
+            },
+        };
+        socketService.sendToAgent(input);
+    }, [data, isSuccess]);
 
     useEffect(() => {
         const info = {
@@ -98,7 +119,7 @@ const TradingPage = () => {
                                     tabWidth={189}
                                     components={[
                                         <PositionDetail key={3} />,
-                                        <OpenOrders key={0} />,
+                                        // <OpenOrders key={0} />,
                                         <TradingHistory key={1} />,
                                         <OpenPositions key={2} />,
                                     ]}
