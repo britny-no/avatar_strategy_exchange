@@ -19,7 +19,6 @@ import useCurrentLanguage from '@/hooks/useCurrentLanguage';
 import Layout from '@/components/layout';
 import socketService from "@/states/socketAgent/SocketService";
 import useSymbolList from "@/hooks/useSymbolList";
-import { useDispatch } from 'react-redux';
 import { useTypedSelector } from '@/states/useTypedSelector';
 import useUpdateData from '@/components/client/UserTabComponents/OpenOrders/useUpdateData';
 
@@ -30,7 +29,7 @@ const TradingPage = () => {
     const userReducerData = useTypedSelector((state) => state.userReducer.data);
     const { szAccNo } = userReducerData;
 
-    const { data, originalData, isSuccess, dataColumn } = useUpdateData();
+    const { data, isSuccess } = useUpdateData();
 
     useEffect(() => {
         const input = {

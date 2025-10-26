@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
 import { Box } from '@mui/material';
 import styled, { css } from 'styled-components';
@@ -7,9 +7,7 @@ import Chart from '@/components/client/Chart/Chart';
 import OrderBook from '@/components/client/OrderBook';
 import SymbolList from '@/components/client/SymbolList';
 import OrderTabsMobile from '@/components/client/OrderTabComponents/OrderTabs_m';
-import Swipe from './Swipe';
 import MyAvatar from "@/components/client/MyAvatar"
-
 
 import FavoriteList from '@/components/client/SymbolList/FavoriteList';
 import useCurrentLanguage from '@/hooks/useCurrentLanguage';
