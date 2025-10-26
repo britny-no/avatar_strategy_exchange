@@ -58,13 +58,22 @@ export default function TradingPageForMobile() {
                 </BackgroundColor>
                 <div style={{ height: 5 }}></div>
 
-                <TabMenu
+                {/* <TabMenu
                     menu={[t("trade:chart"), t("trade:order"), t("trade:stop_limit"), t("trade:modify_cancel")]}
                     components={[
                         <ChartWrapper key={1} />,
                         <MyAvatar key={2} />,
                         <StopLimitForm key={3} language={currentLanguage} />,
                         <ModifyCancelForm key={4} language={currentLanguage} />,
+                    ]}
+                /> */}
+                <TabMenu
+                    menu={[t("trade:chart"), t("trade:my_avatar")]}
+                    components={[
+                        <ChartWrapper key={1} />,
+                        <MyAvatar key={2} />,
+                        // <StopLimitForm key={3} language={currentLanguage} />,
+                        // <ModifyCancelForm key={4} language={currentLanguage} />,
                     ]}
                 />
                 <div style={{ height: 5 }}></div>

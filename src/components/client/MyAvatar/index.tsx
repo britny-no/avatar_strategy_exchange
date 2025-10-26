@@ -85,44 +85,46 @@ export default function Index({ language = LANGUAGE.KOREAN }) {
 
     const renderMoTable = () => {
         if (t3901 && t3901.Output2) {
-            return <AssetTableM>
-                <thead style={{ display: 'block', width: '100%' }}>
-                    <tr className="column" style={{ display: 'flex', width: '100%', flexFlow: "wrap" }}>
-                        <th style={{ width: '20%' }}>{t("metaverseTrader:strategy")}</th>
-                        <th style={{ width: '20%' }}>{t("metaverseTrader:symbol")}</th>
-                        <th style={{ width: '20%' }}>{t("metaverseTrader:strategy_name")}</th>
-                        <th style={{ width: '20%' }}>{t("metaverseTrader:command")}</th>
-                        <th style={{ width: '20%' }}>{t("metaverseTrader:p_l")}</th>
-                    </tr>
-                </thead>
-                <tbody
-                    style={{
-                        display: 'block',
-                        // overflowY: 'scroll',
-                        width: '100%',
-                        height: '400px',
-                    }}
-                >
-                    {t3901.Output2.filter((v, k) => form[k] !== undefined).map((v, k) => {
-                        return <AcriveTrM className="row" key={k}>
-                            <RowMiddleM style={{ width: '20%' }}>{v[0]}: {ob[v[0].trim()]}</RowMiddleM>
-                            <RowMiddleM style={{ width: '20%' }}>{v[1]}</RowMiddleM>
-                            <RowMiddleM style={{ width: '20%' }}>{v[2]}</RowMiddleM>
-                            <RowMiddleM style={{ width: '20%' }}>
-                                <select value={form[k].nCommand} onChange={onChangeHandler} name={k} style={{ cursor: "pointer" }}>
-                                    <option value="0">{t("metaverseTrader:pause")}</option>
-                                    <option value="1">{t("metaverseTrader:close_all")}</option>
-                                    <option value="2">{t("metaverseTrader:stop")}</option>
-                                    <option value="3">{t("metaverseTrader:both")}</option>
-                                    <option value="4">{t("metaverseTrader:sell")}</option>
-                                    <option value="5">{t("metaverseTrader:buy")}</option>
-                                </select>
-                            </RowMiddleM>
-                            <RowMiddleM style={{ width: '20%' }}>{v[8]}</RowMiddleM>
-                        </AcriveTrM>
-                    })}
-                </tbody>
-            </AssetTableM>
+            return <div style={{ padding: "4px" }}>
+                <AssetTableM>
+                    <thead style={{ display: 'block', width: '100%' }}>
+                        <tr className="column" style={{ display: 'flex', width: '100%', flexFlow: "wrap" }}>
+                            <th style={{ width: '20%' }}>{t("metaverseTrader:strategy")}</th>
+                            <th style={{ width: '20%' }}>{t("metaverseTrader:symbol")}</th>
+                            <th style={{ width: '20%' }}>{t("metaverseTrader:strategy_name")}</th>
+                            <th style={{ width: '20%' }}>{t("metaverseTrader:command")}</th>
+                            <th style={{ width: '20%' }}>{t("metaverseTrader:p_l")}</th>
+                        </tr>
+                    </thead>
+                    <tbody
+                        style={{
+                            display: 'block',
+                            // overflowY: 'scroll',
+                            width: '100%',
+                            height: '400px',
+                        }}
+                    >
+                        {t3901.Output2.filter((v, k) => form[k] !== undefined).map((v, k) => {
+                            return <AcriveTrM className="row" key={k}>
+                                <RowMiddleM style={{ width: '20%' }}>{v[0]}: {ob[v[0].trim()]}</RowMiddleM>
+                                <RowMiddleM style={{ width: '20%' }}>{v[1]}</RowMiddleM>
+                                <RowMiddleM style={{ width: '20%' }}>{v[2]}</RowMiddleM>
+                                <RowMiddleM style={{ width: '20%' }}>
+                                    <select value={form[k].nCommand} onChange={onChangeHandler} name={k} style={{ cursor: "pointer" }}>
+                                        <option value="0">{t("metaverseTrader:pause")}</option>
+                                        <option value="1">{t("metaverseTrader:close_all")}</option>
+                                        <option value="2">{t("metaverseTrader:stop")}</option>
+                                        <option value="3">{t("metaverseTrader:both")}</option>
+                                        <option value="4">{t("metaverseTrader:sell")}</option>
+                                        <option value="5">{t("metaverseTrader:buy")}</option>
+                                    </select>
+                                </RowMiddleM>
+                                <RowMiddleM style={{ width: '20%' }}>{v[8]}</RowMiddleM>
+                            </AcriveTrM>
+                        })}
+                    </tbody>
+                </AssetTableM>
+            </div>
         } else {
             return <span>{t("metaverseTrader:no_data")}</span>
         }
