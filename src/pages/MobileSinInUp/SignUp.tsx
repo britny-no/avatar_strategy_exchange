@@ -264,7 +264,7 @@ const SignUp = () => {
                             label={countryCodeText(currentLanguage)}
                             onChange={handleChange('szNation_Name')}
                             allowLeadingZeros={true}
-                            type={TypeEnum.Number}
+                            type={TypeEnum.Text}
                             color="black"
                         />
                         <div style={{ height: 4 }}></div>
@@ -273,7 +273,7 @@ const SignUp = () => {
                             onChange={handleChange('szTelNo2')}
                             allowLeadingZeros={true}
                             maxLength={11}
-                            type={TypeEnum.Number}
+                            type={TypeEnum.Text}
                             color="black"
                         />
                         <div style={{ height: 4 }}></div>
